@@ -1,0 +1,112 @@
+footer {
+  margin-top: 12em;
+  color: white;
+  background-color: black;
+}
+
+.footercontainer {
+  padding: 4em;
+}
+
+.col1 {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: flex-start;
+  row-gap: 3em;
+}
+
+.col3 p {
+  font-size: 13px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.col2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.heading {
+  font-size: 25px;
+}
+
+.col2 p {
+  font-size: 15px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.socials a {
+  color: white;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+
+.socials a:hover {
+  color: teal;
+}
+
+.footerlogo {
+  font-size: 30px;
+  font-family: "WaterBrush";
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 600px) {
+  .footercontainer {
+    padding: 2em;
+  }
+
+  .col1 {
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    gap: 2em;
+  }
+
+  .col2 {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 2em;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  .col2 p {
+    font-size: 15px;
+  }
+
+  .col3:first-child{
+    display: none;
+  }
+
+  .socials {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: .5em;
+  }
+
+
+  .footerlogo {
+    font-size: 30px;
+    font-family: "WaterBrush";
+    font-weight: bold;
+    margin-top: 1em;
+  }
+}
