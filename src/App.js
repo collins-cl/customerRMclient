@@ -1,19 +1,19 @@
 import "./App.css";
-import Acknowledge from "./Components/Acknowledge/Acknowledge";
-import Excite from "./Components/Excitement/Excite";
-import Footer from "./Components/Footer/Footer";
-import Nav from "./Components/Nav/Nav";
-import Picks from "./Components/Picks/Picks";
+import SideBar from "./Components/Sidebar/SideBar";
+import { CssBaseline } from "@mui/material";
+import { ThemeProvider } from "@mui/material/styles";
+import useTheme from "./Custom/useTheme";
 
 function App() {
+  const { theme } = useTheme();
+
   return (
-    <div className="App">
-      {/* <Nav />
-      <Acknowledge />
-      <Picks />
-      <Footer /> */}
-      <Excite />
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <div className="App">
+        <SideBar />
+      </div>
+    </ThemeProvider>
   );
 }
 
