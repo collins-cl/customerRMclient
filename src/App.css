@@ -1,9 +1,8 @@
-*{
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+.App {
+  display: flex;
 }
-
-a{
-  text-decoration: none;
+.otherside {
+  position: relative;
+  flex: 10;
+  height: 100vh;
 }

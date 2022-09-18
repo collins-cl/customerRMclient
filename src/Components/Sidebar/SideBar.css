@@ -1,0 +1,305 @@
+.sidebar {
+  flex: 1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 190px;
+  margin: auto;
+  box-shadow: 0 1px 8px 0px;
+}
+
+.sidebar-wrapper {
+  position: relative;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-wrapper .logo {
+  position: relative;
+}
+
+.sidebar-wrapper .logo .logo-x {
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid;
+  padding: 1.5em 1.5em;
+}
+
+.sidebar-wrapper .logo p {
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.sidebar-wrapper .logo .menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -2.1em;
+}
+
+.hamburger {
+  font-size: 1.7em;
+  border: 1px solid;
+  padding: 4px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 1px 8px 0px;
+}
+
+.navigation {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.nav-links {
+  margin-top: 10px;
+}
+
+.nav-links a {
+  margin-top: 0.4em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em 1.8em;
+  gap: 3px;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  transition: 0.2s background-color;
+  background-color: rgba(219, 219, 219, 0.753);
+}
+
+.navigation .help {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0em;
+}
+
+.help > div {
+  margin-top: 0.4em;
+}
+
+.help .logout,
+.help .mode {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em 1.8em;
+  gap: 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation .help .logout:hover,
+.help .mode:hover {
+  transition: 0.2s background-color;
+  background-color: rgba(219, 219, 219, 0.753);
+}
+
+@media screen and (max-width: 960px) {
+  .sidebar {
+    flex: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 10px;
+    margin: auto;
+    box-shadow: 0 1px 8px 0px;
+  }
+
+  .sidebar-wrapper {
+    position: relative;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-wrapper .logo {
+    position: relative;
+  }
+
+  .sidebar-wrapper .logo .logo-x {
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid;
+    padding: 10px 0;
+  }
+
+  .sidebar-wrapper .logo p {
+    display: none;
+  }
+
+  .sidebar-wrapper .logo .menu {
+    display: none;
+  }
+
+  .navigation {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .nav-links a {
+    margin-top: 1.5em;
+    padding: 0.5em 1em;
+    position: relative;
+  }
+
+  .nav-links a:nth-child(1):hover::after {
+    content: "overview";
+    border: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    margin-top: -1em;
+    margin-right: -5em;
+    width: 6em;
+    height: 1.5em;
+    background-color: rgba(219, 219, 219, 0.753);
+    transition: 3s;
+  }
+
+  .nav-links a:nth-child(2):hover::after {
+    content: "customers";
+    border: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    margin-top: -1em;
+    margin-right: -5em;
+    width: 6em;
+    height: 1.5em;
+    background-color: rgba(219, 219, 219, 0.753);
+    transition: 3s;
+  }
+  .nav-links a:nth-child(3):hover::after {
+    content: "products";
+    border: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    margin-top: -1em;
+    margin-right: -5em;
+    width: 6em;
+    height: 1.5em;
+    background-color: rgba(219, 219, 219, 0.753);
+    transition: 3s;
+  }
+  .nav-links a:nth-child(4):hover::after {
+    content: "orders";
+    border: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    margin-top: -1em;
+    margin-right: -5em;
+    width: 6em;
+    height: 1.5em;
+    background-color: rgba(219, 219, 219, 0.753);
+    transition: 3s;
+  }
+  .nav-links a:nth-child(5):hover::after {
+    content: "feedback";
+    border: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    margin-top: -1em;
+    margin-right: -5em;
+    width: 6em;
+    height: 1.5em;
+    background-color: rgba(219, 219, 219, 0.753);
+    transition: 3s;
+  }
+  .nav-links a:nth-child(6):hover::after {
+    content: "settings";
+    border: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    margin-top: -1em;
+    margin-right: -5em;
+    width: 6em;
+    height: 1.5em;
+    background-color: rgba(219, 219, 219, 0.753);
+    transition: 3s;
+  }
+
+  .nav-links a p {
+    display: none;
+  }
+
+  .navigation .help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0em;
+  }
+
+  .help .logout,
+  .help .mode {
+    padding: 0.4em 0.5em;
+    font-size: 1.2em;
+  }
+
+  .help .logout p,
+  .help .mode p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .help .logout,
+  .help .mode {
+    padding: 0.4em 0.2em;
+    font-size: 1.2em;
+  }
+  .nav-links a {
+    margin-top: 1.2em;
+    padding: 0.5em 0.3em;
+    position: relative;
+  }
+}

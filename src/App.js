@@ -1,18 +1,50 @@
 import "./App.css";
 import SideBar from "./Components/Sidebar/SideBar";
 import { CssBaseline } from "@mui/material";
-import { ThemeProvider } from "@mui/material/styles";
-import useTheme from "./Custom/useTheme";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState, useMemo } from "react";
+
+const initialState = !!JSON.parse(localStorage.getItem("theme"));
 
 function App() {
-  const { theme } = useTheme();
+  const [darkmode, setDarkmode] = useState(initialState);
+
+  const theme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode: darkmode ? "dark" : "light",
+        },
+      }),
+    [darkmode]
+  );
+
+  const colorMode = useMemo(
+    () => ({
+      themeToggler: () => {
+        setDarkmode((prevMode) => {
+          localStorage.setItem("theme", !prevMode);
+          return !prevMode;
+        });
+      },
+    }),
+    []
+  );
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div className="App">
-        <SideBar />
-      </div>
+      <Router>
+        <div className="App">
+          <SideBar theme={theme} toggle={colorMode.themeToggler} />
+          <div className="otherside">
+            <Routes>
+              <Route />
+            </Routes>
+          </div>
+        </div>
+      </Router>
     </ThemeProvider>
   );
 }
