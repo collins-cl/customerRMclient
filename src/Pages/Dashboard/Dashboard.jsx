@@ -22,6 +22,10 @@ const Dashboard = () => {
         <div>
           <Dashcontent />
         </div>
+
+        <div>
+          <Dashcontent />
+        </div>
       </div>
     </div>
   );
