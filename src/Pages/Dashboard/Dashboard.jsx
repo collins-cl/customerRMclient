@@ -14,7 +14,9 @@ const Dashboard = () => {
             <p>Welcome, it's great to see you again collins!</p>
           </div>
 
-          <Interactions />
+          <div className="int">
+            <Interactions />
+          </div>
         </div>
 
         <div>

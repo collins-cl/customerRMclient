@@ -83,10 +83,12 @@
   }
 
   .greeting {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+  grid-template-columns: auto auto;
     align-items: center;
   }
+
+
 
   .welcome .head {
     font-size: 1.6em;
