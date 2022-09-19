@@ -286,6 +286,17 @@
 }
 
 @media screen and (max-width: 600px) {
+  .sidebar-wrapper {
+    position: relative;
+    width: 10px;
+    margin: auto;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .help .logout,
   .help .mode {
     padding: 0.4em 0.2em;
