@@ -84,11 +84,11 @@
 
   .greeting {
     display: grid;
-  grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
     align-items: center;
+    columns: 5em;
   }
-
-
 
   .welcome .head {
     font-size: 1.6em;
