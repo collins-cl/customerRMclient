@@ -29,27 +29,27 @@ const SideBar = ({ theme, toggle }) => {
 
         <div className="navigation">
           <div className={open ? "nav-links" : "nav-links active"}>
-            <Link to="/rum">
+            <Link to="/">
               <MdBarChart />
               <p>Overview</p>
             </Link>
-            <Link to="">
+            <Link to="/customers">
               <FaUsers />
               <p>Customers</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <MdBook />
               <p>Products</p>
             </Link>
-            <Link to="">
+            <Link to="/orders">
               <MdOutlineShoppingCart />
               <p>Orders</p>
             </Link>
-            <Link to="">
+            <Link to="/feedbacks">
               <MdOutlineBookmark />
               <p>Feedbacks</p>
             </Link>
-            <Link to="">
+            <Link to="/settings">
               <MdOutlineSettings />
               <p>Settings</p>
             </Link>
@@ -61,7 +61,7 @@ const SideBar = ({ theme, toggle }) => {
                 <MdBrightness4 />
               ) : (
                 <MdBrightness7 />
-              )}{" "}
+              )}
               <p>Mode</p>
             </div>
             <div className="logout">

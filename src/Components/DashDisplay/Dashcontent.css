@@ -1,0 +1,96 @@
+.hero-total-equity {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.hero-total-equity > div {
+  margin: 0 0 0 1em;
+}
+
+.total-sales {
+  background-color: #5f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1em 2em 1em 1em;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0px;
+}
+
+.total-sales > div {
+  margin-top: 0.5em;
+}
+
+.ts-flex-1 {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+}
+
+.ts-flex-1 > * {
+  margin: 0 5px 0px 0;
+}
+
+.ts-flex-1 span {
+  font-size: 14px;
+}
+
+.ts-2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.ts-3 {
+  font-size: 13px;
+}
+
+.total-visitors {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1em 5em 1em 1em;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0px;
+}
+
+.total-orders,
+.today-sale {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1em 4em 1em 1em;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0px;
+}
+
+.total-orders > div,
+.today-sale > div,
+.happy-visitors > div,
+.total-visitors > div {
+  margin-top: 0.5em;
+}
+
+.happy-visitors {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1em 2.5em 1em 1em;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0px;
+}

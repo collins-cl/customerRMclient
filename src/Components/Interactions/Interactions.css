@@ -1,0 +1,44 @@
+#alert {
+  position: relative;
+}
+
+#alert p {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: 0;
+  margin-top: 6px;
+  margin-right: 8px;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  border-radius: 50px;
+  color: white;
+  background-color: red;
+}
+
+.interactions {
+  display: flex;
+  align-items: center;
+}
+
+.interactions > div{
+    margin: 0 5px;
+}
+
+.profile-bar {
+  display: flex;
+  align-items: center;
+}
+
+.profile-bar > div {
+  margin: 0 10px;
+}
+
+.profile-bar h5 {
+  font-weight: lighter;
+  font-size: 13px;
+}

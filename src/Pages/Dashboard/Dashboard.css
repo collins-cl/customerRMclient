@@ -1,0 +1,32 @@
+.dashboard {
+  position: relative;
+  padding: 0.7em 2em;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-wrapper > div {
+  margin: 0.7em 0;
+}
+
+.greeting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome {
+  line-height: 1.9em;
+}
+
+.welcome .head {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.welcome p {
+  font-size: 12px;
+}

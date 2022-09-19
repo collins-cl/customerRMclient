@@ -4,6 +4,7 @@ import { CssBaseline } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useMemo } from "react";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 const initialState = !!JSON.parse(localStorage.getItem("theme"));
 
@@ -40,7 +41,7 @@ function App() {
           <SideBar theme={theme} toggle={colorMode.themeToggler} />
           <div className="otherside">
             <Routes>
-              <Route />
+              <Route path="/" element={<Dashboard />} />
             </Routes>
           </div>
         </div>
