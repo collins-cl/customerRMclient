@@ -25,8 +25,8 @@
   align-items: center;
 }
 
-.interactions > div{
-    margin: 0 5px;
+.interactions > div {
+  margin: 0 5px;
 }
 
 .profile-bar {
@@ -41,4 +41,32 @@
 .profile-bar h5 {
   font-weight: lighter;
   font-size: 13px;
+}
+
+@media screen and (max-width: 650px) {
+  .interactions .search {
+    display: none;
+  }
+
+  .interactions {
+    display: flex;
+    align-items: center;
+  }
+
+  .interactions > div {
+    margin: 0 3px;
+  }
+
+  .profile-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-bar > div {
+    margin: 0 10px;
+  }
+
+  .profile-bar h5 {
+    display: none;
+  }
 }

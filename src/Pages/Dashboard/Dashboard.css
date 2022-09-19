@@ -1,11 +1,11 @@
 .dashboard {
   position: relative;
-  padding: 0.7em 2em;
 }
 
 .dashboard-wrapper {
   display: flex;
   flex-direction: column;
+  padding: 0.7em 2em;
 }
 
 .dashboard-wrapper > div {
@@ -29,4 +29,71 @@
 
 .welcome p {
   font-size: 12px;
+}
+
+@media screen and (max-width: 960px) {
+  .dashboard {
+    position: relative;
+    max-width: calc(100vw-190px);
+  }
+
+  .dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0.7em 1.4em;
+  }
+
+  .dashboard-wrapper > div {
+    margin: 0.6em 0;
+  }
+
+  .greeting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .welcome {
+    line-height: 1.9em;
+  }
+
+  .welcome .head {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+
+  .welcome p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .dashboard {
+    position: relative;
+  }
+
+  .dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 1.2em;
+  }
+
+  .dashboard-wrapper > div {
+    margin: 0.6em 0;
+  }
+
+  .greeting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .welcome .head {
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+
+  .welcome p {
+    display: none;
+  }
 }

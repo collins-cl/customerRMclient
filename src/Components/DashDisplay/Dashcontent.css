@@ -94,3 +94,27 @@
   border-radius: 5px;
   box-shadow: 0 1px 5px 0px;
 }
+
+@media screen and (max-width: 960px) {
+  .hero-total-equity {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .hero-total-equity > div {
+    margin: 0.5em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero-total-equity {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .hero-total-equity > div {
+    margin: 0.5em;
+  }
+}
