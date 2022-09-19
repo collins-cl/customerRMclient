@@ -1,0 +1,69 @@
+import React from 'react'
+
+const Win = () => {
+  return (
+    <div>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+        <p>dxac</p>
+    </div>
+  )
+}
+
+export default Win
