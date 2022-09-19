@@ -7,10 +7,9 @@
   width: 100%;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 960px) {
   .otherside {
     z-index: -999;
-    background-color: red;
     max-width: calc(100vw - 40px);
     left: 40px;
   }
