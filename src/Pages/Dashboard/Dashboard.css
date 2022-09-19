@@ -74,7 +74,7 @@
   .dashboard-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 0.3em 1.6em;
+    padding: 0.3em 1.2em;
   }
 
   .dashboard-wrapper > div {
@@ -84,12 +84,6 @@
   .greeting {
     display: flex;
     align-items: center;
-    
-    /* display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 5em; */
   }
 
   .welcome .head {
