@@ -69,17 +69,17 @@
 
 @media screen and (max-width: 650px) {
   .dashboard {
-    position: relative;
+    top: 0;
   }
 
   .dashboard-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 0.5em 1.2em;
+    padding: 0 1.2em;
   }
 
   .dashboard-wrapper > div {
-    margin: 0.6em 0;
+    margin: 0;
   }
 
   .greeting {
