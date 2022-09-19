@@ -32,9 +32,6 @@
 }
 
 @media screen and (max-width: 960px) {
-  .dashboard {
-    top: 0;
-  }
 
   .dashboard-wrapper {
     display: flex;
@@ -67,10 +64,6 @@
 }
 
 @media screen and (max-width: 650px) {
-  .dashboard {
-    top: 0;
-  }
-
   .dashboard-wrapper {
     display: flex;
     flex-direction: column;
