@@ -6,6 +6,7 @@ import {
   MdPeopleOutline,
   MdStarOutline,
 } from "react-icons/md";
+import { IoMdHappy } from "react-icons/io";
 
 const Dashcontent = () => {
   return (
@@ -46,7 +47,7 @@ const Dashcontent = () => {
       </div>
       <div className="happy-visitors">
         <div className="ts-flex-1">
-          <MdStarOutline />
+          <IoMdHappy />
           <span>Happy visitors</span>
         </div>
         <div className="ts-2">84</div>
