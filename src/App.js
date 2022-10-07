@@ -5,7 +5,9 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useMemo } from "react";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-import Win from "./Pages/Win";
+import Visitors from "./Pages/Visitors/Visitors";
+import NewCustomer from "./Pages/NewCustomer/NewCustomer";
+
 
 const initialState = !!JSON.parse(localStorage.getItem("theme"));
 
@@ -43,7 +45,8 @@ function App() {
           <div className="otherside">
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/customers" element={<Win />} />
+              <Route path="/customers" element={<Visitors />} />
+              <Route path="/customers/createnew" element={<NewCustomer />} />
             </Routes>
           </div>
         </div>
